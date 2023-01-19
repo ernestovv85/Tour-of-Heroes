@@ -1,7 +1,4 @@
-*{
-  display: flex;
-  justify-content: center;
-}
+
 
 label {
   display: block;
@@ -12,7 +9,7 @@ label {
 }
 input {
   padding: 0.5rem;
-  width: 100%;
+  width: 20%;
   max-width: 600px;
   box-sizing: border-box;
   display: block;
@@ -30,7 +27,7 @@ li {
   border-left: 1px solid gray;
   border-right: 1px solid gray;
   display: inline-block;
-  width: 100%;
+  width: 20%;
   max-width: 600px;
   padding: 0.5rem;
   box-sizing: border-box;

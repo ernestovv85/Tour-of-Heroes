@@ -1,13 +1,15 @@
 <h2>My Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button type="button" class="delete" title="delete hero"
-    (click)="delete(hero)">x</button>
-  </li>
-</ul>
+<div class="grid-fluid">
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <button type="button" class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>
 <div>
   <label for="new-hero">Hero name: </label>
   <input id="new-hero" #heroName />
